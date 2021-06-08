@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+        <div id="background">
+            <noscript>
+                <div>
+                    <span>Please enable Javascript</span>
+                </div>
+            </noscript>
+            <div id="redirectinfo">
+                <span>Rediricting to </span>
+                <span></span>
+                <span></span>
+            </div>
+            <div id="newrequest">
+                <div>
+                    <h1>Url shortner</h1>
+                    <input placeholder="Url here" value="https://github.com/powercord-org/powercord/tree/v2/src/Powercord" class="urlbox" value="" required type="url" id="newrequest_input">
+                    <button onclick="getInputValue()" id="newrequest_button" class="btn blurple submitbutton" value="Shorten!">Copy</button>
+                </div>
+            </div>
+            
+        <div id="Makers">
+            <div id="version">
+                <span>Version: </span><span>1.0.0</span>
+            </div>
+            <div>
+                <span>Engine: </span><a href="https://is.gd/">is.gd</a>
+            </div>
+        </div>
+
+        </div>
+        <script>
+            function getInputValue() {
+                let inputVal = document.getElementById('newrequest_input').value;
+                // Displaying the value
+                const is_gd = 'https://is.gd/create.php?format=simple&url='+inputVal;
+
+                const myHeaders = new Headers();
+                fetch(is_gd, {
+                    headers: myHeaders,
+                    mode: 'cors',
+                    cache: 'default'
+                })
+            }
+        </script>
+        <script src="./index.js"></script>
+    </body>
+</html>

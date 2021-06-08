@@ -1,0 +1,136 @@
+body{
+    background-color: #1c1b29;
+}
+div#redirectinfo{
+    color: #fbfbfb; 
+    text-align: center; 
+    position: fixed; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%,-50%);
+}
+div#background{
+    top:    6px; 
+    left:   6px; 
+    right:  6px; 
+    bottom: 6px; 
+    border-radius: 6px;
+    position: fixed;
+    background: #292841;
+}
+noscript{
+    position: fixed; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%,-50%);
+    border-radius: 6px;
+    padding: 6px;
+    background: #413f66;
+    min-width: 13.5;
+    min-height: 7.188;
+    z-index: 10;
+}
+noscript div{
+    position: relative;
+    min-width: 13.5;
+    min-height: 7.188;
+    background: #343350;
+    border-radius: 6px;
+}
+noscript div span{
+    position: fixed; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%,-50%);
+    color: #fbfbfb; 
+    width: 100%;
+    text-align: center;
+}
+div#newrequest{
+    position: fixed; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%,-50%);
+    border-radius: 6px;
+    padding: 6px;
+    background: #413f66;
+    min-width: 13.5;
+    min-height: 7.188;
+}
+div#newrequest>div{
+    border-radius: 6px;
+    padding: 6px;
+    background: #343350;
+}
+h1{
+    color: #fbfbfb;  
+    text-align: center; 
+}
+input#newrequest_input{
+    background: #8e9ccf;
+    border-radius: 4px;
+    padding: 4px 6px;
+    border-width: unset;
+    border-style: unset;
+}
+input#newrequest_input:-ms-input-placeholder{
+    color: #e2e2e2;
+}
+input#newrequest_input::-ms-input-placeholder{
+    color: #e2e2e2;
+}
+input#newrequest_input::placeholder{
+    color: #e2e2e2;
+    opacity: 1;
+}
+.btn {
+  text-decoration: none;
+  color: var(--text-color);
+  cursor: pointer;
+  color: #fbfbfb; 
+}
+.btn:hover {
+  opacity: .93;
+}
+.btn:active {
+  opacity: .88;
+}
+.btn.blurple {
+  background: #7289da;
+  border-radius: 4px;
+  padding: 2px 4px;
+}
+button {
+  -webkit-appearance: unset;
+     -moz-appearance: unset;
+          appearance: unset;
+  -webkit-writing-mode: unset;
+  text-rendering: unset;
+  color: unset;
+  letter-spacing: unset;
+  word-spacing: unset;
+  text-transform: unset;
+  text-indent: unset;
+  text-shadow: unset;
+  display: unset;
+  text-align: unset;
+  -webkit-box-align: unset;
+      -ms-flex-align: unset;
+          align-items: unset;
+  cursor: unset;
+  background-color: unset;
+  -webkit-box-sizing: unset;
+          box-sizing: unset;
+  margin: unset;
+  font: unset;
+  padding: unset;
+  border-width: unset;
+  border-style: unset;
+  border-color: unset;
+  -o-border-image: unset;
+     border-image: unset;
+}
+::-ms-input-placeholder, ::-webkit-input-placeholder, ::-ms-input-placeholder, ::placeholder, body, button, input, select, textarea {
+  font-family: Whitney,Helvetica Neue,Helvetica,Arial,sans-serif;
+  text-rendering: optimizeLegibility;
+}
